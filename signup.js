@@ -76,7 +76,7 @@ function signUpCheck(){
     check = false
   }
   else{
-  document.getElementById("nameError").innerHTML=""
+    document.getElementById("idError").innerHTML=""
   }
   // 비밀번호가 입력되지 않았을 경우
   if(password===""){
@@ -91,11 +91,8 @@ function signUpCheck(){
     document.getElementById("passwordCheckError").innerHTML="비밀번호를 다시 입력해주세요."
     check = false
   }
-  else{
-    document.getElementById("passwordCheckError").innerHTML=""
-  }
   // 입력된 비밀번호가 서로 다를 경우  
-  if(password !== passwordCheck){
+  else if(password !== passwordCheck){
     document.getElementById("passwordError").innerHTML=""
     document.getElementById("passwordCheckError").innerHTML="비밀번호가 동일하지 않습니다."
     check = false
@@ -113,7 +110,7 @@ function signUpCheck(){
     document.getElementById("areaError").innerHTML=""
   }
   // 성별체크확인
-  if(!gender_man && !gender_woman){  // 남자와 여자가 모두 선택이 안되었을 경우
+  if (!gender_man && !gender_woman){  // 남자와 여자가 모두 선택이 안되었을 경우
     document.getElementById("genderError").innerHTML="성별을 선택해주세요."
     check = false
   }

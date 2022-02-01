@@ -93,12 +93,10 @@ function signUpCheck(){
   }
   // 입력된 비밀번호가 서로 다를 경우  
   else if(password !== passwordCheck){
-    document.getElementById("passwordError").innerHTML=""
     document.getElementById("passwordCheckError").innerHTML="비밀번호가 동일하지 않습니다."
     check = false
   }
   else{
-    document.getElementById("passwordError").innerHTML=""
     document.getElementById("passwordCheckError").innerHTML=""
   }
   // 지역선택 확인

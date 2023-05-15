@@ -1,0 +1,94 @@
+.header .title {
+  width: 700px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 3px;
+  line-height: 35px;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.email input {
+  width: 200px;
+}
+
+.id input {
+  width: 200px;
+}
+
+.password input {
+  width: 200px;
+}
+
+.passwordCheck input {
+  width: 200px;
+}
+
+/*휴대폰번호*/
+.phone {
+  line-height: 35px;
+}
+
+#phone1 {
+  width: 100px;
+}
+
+#phone2 {
+  width: 100px;
+}
+
+#phone3 {
+  width: 100px;
+}
+
+/*인증*/
+.auth {
+  display: flex;
+  justify-content: center;
+}
+
+.auth div {
+  width: 30%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/*인증번호 전송 버튼*/
+.auth button {
+  width: 30%;
+}
+
+/*인증확인 버튼*/
+.timer button {
+  width: 30%;
+}
+
+.area select {
+  width: 30%;
+  height: 40px;
+}
+
+.gender {
+  text-align: center;
+}
+
+.signUp button {
+  width: 50%;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  height: 30px;
+}
+
+.error {
+  font-size: 1px;
+  height: 20px;
+  color: red;
+  font-weight: 700;
+}

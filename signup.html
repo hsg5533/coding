@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <script src="./js/signup.js"></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo" />
+      </div>
+      <div class="nav_but">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="community.html">community</a>
+        <a href="signup.html">Signup</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+    <section class="header">
+      <div class="title">
+        <from>
+          <fieldset>
+            <legend><h2>회원가입</h2></legend>
+            <div class="email">
+              <input
+                id="email"
+                type="text"
+                placeholder="이메일을 입력해 주세요."
+              />
+              <div id="emailError" class="error"></div>
+            </div>
+            <div class="id">
+              <input
+                id="id"
+                type="text"
+                placeholder="아이디를 입력해 주세요."
+              />
+              <div id="idError" class="error"></div>
+            </div>
+            <div class="password">
+              <input
+                id="password"
+                type="password"
+                placeholder="비밀번호를 입력해 주세요."
+              />
+              <div id="passwordError" class="error"></div>
+            </div>
+            <div class="passwordCheck">
+              <input
+                id="passwordCheck"
+                type="password"
+                placeholder="비밀번호를 다시 입력해 주세요."
+              />
+              <div id="passwordCheckError" class="error"></div>
+            </div>
+            <div class="phone">
+              <input
+                id="phone1"
+                type="text"
+                size="1"
+                maxlength="3"
+                oninput="changePhone1()"
+                placeholder="010"
+              />
+              -
+              <input
+                id="phone2"
+                type="text"
+                size="3"
+                maxlength="4"
+                oninput="changePhone2()"
+                placeholder="1234"
+              />
+              -
+              <input
+                id="phone3"
+                type="text"
+                size="3"
+                maxlength="4"
+                oninput="changePhone3()"
+                placeholder="5678"
+              />
+            </div>
+            <br />
+            <div class="auth">
+              <button disabled id="sendMessage" onclick="getToken()">
+                인증하기
+              </button>
+            </div>
+            <br />
+            <div class="timer">
+              <button disabled id="completion" onclick="checkCompletion()">
+                인증확인
+              </button>
+            </div>
+            <br />
+            <div class="area">
+              <select id="area">
+                <option selected disabled>지역을 선택하세요.</option>
+                <option>서울</option>
+                <option>인천</option>
+                <option>경기</option>
+              </select>
+              <div id="areaError" class="error"></div>
+            </div>
+            <div class="gender">
+              <input id="gender_man" type="radio" name="gender" />남성
+              <input id="gender_woman" type="radio" name="gender" />여성
+              <div id="genderError" class="error"></div>
+            </div>
+          </fieldset>
+        </from>
+        <br />
+        <div class="signUp">
+          <button id="signUpButton" disabled onclick="signUpCheck()">
+            가입하기
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="left">
+          <h1>Coding.com</h1>
+        </div>
+        <div class="right">
+          <div class="list">
+            <h2>CONTECT</h2>
+            <ul>
+              <li>contect #1</li>
+              <li>contect #2</li>
+              <li>contect #3</li>
+              <li>contect #4</li>
+            </ul>
+          </div>
+          <div class="list">
+            <h2>ABOUT</h2>
+            <ul>
+              <li>about #1</li>
+              <li>about #2</li>
+              <li>about #3</li>
+              <li>about #4</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy_right">
+        <p>@copy_right: 정호상 (E-mail: hsg5533@naver.com)</p>
+      </div>
+    </footer>
+  </body>
+</html>
